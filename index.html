@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IPL Auction</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://iili.io/dmXi1Q1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            /* Allows content to extend beyond viewport if necessary */
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .logos {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .logos img {
+            height: 80px;
+            width: auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            animation: glow 1.5s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px #fff, 0 0 15px #ff6600;
+            }
+
+            100% {
+                text-shadow: 0 0 15px #fff, 0 0 30px #ff6600;
+            }
+        }
+
+        .event-details {
+            font-size: 1.2rem;
+            margin: 15px 0;
+        }
+
+        .qr-code img {
+            height: 120px;
+            width: auto;
+            margin-top: 15px;
+        }
+
+        .register-button {
+            background-color: #ff6600;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .register-button:hover {
+            background-color: #e65c00;
+        }
+
+        .attractive-text {
+            font-size: 1.2rem;
+            margin: 20px 0;
+            color: rgb(73, 235, 246);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .prize {
+            font-size: 1.4rem;
+            margin: 10px 0;
+            color: #33ff8b;
+            font-weight: bold;
+        }
+
+        .key {
+            font-size: 4rem;
+            display: inline-block;
+            font-weight: bold;
+            text-shadow: 0 0 5px #fff, 0 0 15px #ff6600;
+            transition: transform 0.2s;
+            animation: glow 1.5s infinite alternate;
+        }
+
+        .key-space {
+            letter-spacing: 15px;
+        }
+
+        .animated-heading {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .animated-heading .key:nth-child(odd) {
+            animation-duration: 3s;
+        }
+
+        .animated-heading .key:nth-child(even) {
+            animation-duration: 2s;
+        }
+
+        /* Poster Styling */
+        .poster {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .poster img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+        /* Footer styles */
+        footer {
+            margin-top: auto;
+            /* Footer sticks to the bottom of the page */
+            text-align: center;
+            font-size: 0.9rem;
+            color: #ccc;
+            padding: 10px 0;
+        }
+
+        footer img {
+            height: 25px;
+            width: auto;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logos">
+            <img src="https://iili.io/dmXOPpa.png" alt="EDC Logo"> <!-- EDC Logo -->
+            <img src="https://iili.io/dmvxNN1.md.png" alt="JUET Logo"> <!-- JUET Logo -->
+        </div>
+
+        <h1>IPL AUCTION</h1>
+
+        <div class="event-details">
+            <p><strong>Date:</strong> 9th October 2024</p>
+            <p><strong>Time:</strong> 4:30 PM</p>
+            <p><strong>Venue:</strong> LT-6</p>
+        </div>
+
+        <div class="attractive-text">
+            <p>Gear up for an exciting, adrenaline-pumping IPL Auction event! Build your dream team, place strategic
+                bids, and compete against your friends!</p>
+            <p>Experience the thrill of being a team owner and see if your strategy can take you to victory!</p>
+        </div>
+
+
+
+        <!-- Event Poster Section -->
+        <div class="poster">
+            <img src="https://i.ibb.co/sCJrdNH/Poster-IPL-Auction.png" alt="Event Poster">
+        </div>
+
+        <div class="prize">
+            <p>🏆 Prize worth ₹2000 for the winning team! 🏆</p>
+        </div>
+
+        <div class="qr-code">
+            <img src="https://iili.io/dmXNklt.md.jpg" alt="QR Code"> <!-- Add your QR code for registration here -->
+        </div>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeE7WvGiXf1c3HcG2mjbP3RjkqErmlR682JJMHTWx5R3_GUxg/viewform?usp=sf_link"
+            target="_blank" style="text-decoration: none;">
+            <button class="register-button">Register Now</button>
+        </a>
+    </div>
+
+    <footer>
+        <p style="font-weight: bold; font-size: 1.2rem; color: rgb(255, 255, 255); text-shadow: 1px 1px 5px black;">
+            Himanshi Dayal</p>
+        <p style="font-weight: bold; font-size: 1.2rem; color: white; text-shadow: 1px 1px 5px black;">Technical,
+            Secretary</p>
+        <p style="font-weight: bold; font-size: 1.2rem; color: white; text-shadow: 1px 1px 5px black;">Entrepreneurial
+            Development Cell</p>
+        <div>
+            <a href="https://www.linkedin.com/in/himanshi-dayal-200a66258/" target="_blank">
+                <img src="https://iili.io/dmXkjxj.png" alt="LinkedIn"
+                    style="height: 30px; width: auto; margin-right: 10px;">
+            </a>
+            <a href="" target="_blank">
+                <img src="https://iili.io/dmXwEuf.png" alt="Facebook"
+                    style="height: 30px; width: auto; margin-right: 10px;">
+            </a>
+            <a href="https://www.instagram.com/itsshimmi_14/" target="_blank">
+                <img src="https://iili.io/dmXeic7.png" alt="Instagram" style="height: 30px; width: auto;">
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
